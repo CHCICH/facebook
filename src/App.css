@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: inherit;
 }
 
 .App-logo {
@@ -35,4 +36,182 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+body{
+  background-color:#F2F3F5;
+}
+
+.NavBar{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  height: 45px;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 0 4px 8px 0 rgba(158, 158, 158, 0.2), 0 6px 20px 0 rgba(159, 159, 159, 0.19);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.Logo-icon{
+  object-fit: cover;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  display: block;
+  margin-right: 3em;
+}
+.Links-div-main{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  height: 100%;
+  margin-top:5px;
+  margin-left: 10px;
+}
+
+.little-icon{
+  object-fit: cover;
+  height: 1.8vmax;
+  width:1.8vmax;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+.Main-Link{
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 200ms;
+  
+}
+.Main-Link:hover{
+  background-color: #dadada93;
+  
+}
+.Search-bar{
+  font-size: medium;
+  border: none;
+  background-color:#e6e7e9a6;
+  border-radius: 30px;
+  width: 210px;
+  height: 85%;
+  padding-left:15px;
+  padding-right:15px;
+  transform: translate(-35%);
+  margin-left: 10px;
+
+}
+.Search-bar:focus{
+  outline: none;
+}
+.search-box{
+  display: flex;
+  height: 100%;
+  width: 25vw;
+  justify-content: space-between;
+  margin-top:5px;
+  margin-left: 10px;
+}
+.icons-buttons-box{
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  justify-content:center ;
+  margin-top:12px;
+  margin-right: -20px;
+}
+.icon-notification-navbar:hover{
+}
+.icon-nav{
+  object-fit: cover;
+  height: 26px;
+  width: 26px;
+  border-radius: 10px;
+  display: block;
+margin-right: 1em;
+background-color:#e6e7e9fa;
+padding: 5px;
+border-radius: 50%;
+}
+.icon-nav:hover{
+  background-color: #cfcfcffa;
+  cursor: pointer;
+}
+.little-search-icon{
+  object-fit:contain;
+  height: 15px;
+  width: 15px;
+  border-radius: 10px;
+  display: block;
+margin-right: 1em;
+background-color:#00184800;
+padding: 5px;
+border-radius: 50%;
+position: relative;
+z-index: 1;
+top: 40px;
+}
+.has-search .form-control {
+  /* padding-left:1.1rem; */
+}
+
+.has-search .form-control-feedback {
+  position: absolute; 
+  z-index: 2;
+  /* display: block; 
+  /* width: 2.375rem;
+  height: 2.375rem; */
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+.width-bar{
+  height: 35px;
+  
+  padding-left: 40px;
+}
+.little-searchicon{
+  transform: translate(-230%,-120%);
+  padding: 10px;
+}
+.search-bar{
+  margin-left: 50px;
+ 
+}
+.highlight{
+  font-size: small;
+  position: absolute;
+  top:120%;
+  color: rgb(234, 232, 232);
+  background-color: #3f3e3ee6;
+  padding: 0 10px 0 10px;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  
+}
+.Main-menu-Dropdown{
+  position: fixed;
+  height: 90%;
+  width: 40vw;
+  transform: translate(-65%,1%);
+  border-radius: 10px;
+  background-color: #efefef;
+  box-shadow: 0 4px 8px 0 rgba(39, 38, 38, 0.396), 0 6px 20px 0 rgba(56, 56, 56, 0.686);
+
+}
+.spes-h{
+  z-index: 2;
+}
+.Menu-title{
+margin: 15px;
+overflow-y:scroll ;
 }
