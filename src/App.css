@@ -204,14 +204,46 @@ top: 40px;
   width: 40vw;
   transform: translate(-65%,1%);
   border-radius: 10px;
-  background-color: #efefef;
-  box-shadow: 0 4px 8px 0 rgba(39, 38, 38, 0.396), 0 6px 20px 0 rgba(56, 56, 56, 0.686);
-
+  background-color: #f6f9fb;
+  box-shadow: 0 4px 8px 0 rgba(39, 38, 38, 0.177), 0 6px 20px 0 rgba(56, 56, 56, 0.221);
+  overflow: hidden;
+  z-index: 2;
 }
 .spes-h{
   z-index: 2;
 }
 .Menu-title{
 margin: 15px;
-overflow-y:scroll ;
+}
+.create-Main-menu-section{
+  display: flex;
+  height: 70%;
+  width: 35%;
+  border-radius:10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(39, 38, 38, 0.119), 0 6px 20px 0 rgba(56, 56, 56, 0.185);
+  position: absolute;
+  left: 62%;
+  top: 60px;
+  margin-right: 15px;
+}
+.Search-for-activities-div{
+  display: flex;
+  height: 250%;
+  width: 58%;
+  border-radius:10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(39, 38, 38, 0.119), 0 6px 20px 0 rgba(56, 56, 56, 0.185);
+  margin-left: 15px;
+}
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #AAAAAA;
+
 }

@@ -70,11 +70,24 @@ function MainMenu() {
         {state.highlight && <div className='highlight spes-h'>Menu</div>}
         <div style={{display:ishere}} className='Main-menu-Dropdown' ref={dropdown}  >
           <h2 className='Menu-title'>Menu</h2>
-          <div className='Search-for-activities-div'> 
+          <div style={{height:"100%", overflowY:'scroll'}}><div className='Search-for-activities-div'> </div>
           
           </div>
           <div className='create-Main-menu-section'> 
           <h3>Create</h3>
+          <div className='inside-div-create-main-menu-container'>
+            <br></br>
+            <div className='highilited-create-idea'> <h4 >Post</h4></div>
+            <div className='highilited-create-idea'> <h4 >Story</h4></div>
+            <div className='highilited-create-idea'> <h4 >Room</h4></div>
+            <div className='highilited-create-idea'> <h4 >Page</h4></div>
+            <div className='highilited-create-idea'> <h4 >Ad</h4></div>
+            <div className='highilited-create-idea'> <h4 >Group</h4></div>
+            <div className='highilited-create-idea'> <h4 >Event</h4></div>
+            <div className='highilited-create-idea'> <h4 >Marketplace Listing</h4></div>
+
+
+          </div>
           </div>
     </div>
     </div>
