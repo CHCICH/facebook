@@ -304,6 +304,27 @@ hr{
   border-radius: 10px;
   background-color: #f6f9fb;
   box-shadow: 0 4px 8px 0 rgba(39, 38, 38, 0.177), 0 6px 20px 0 rgba(56, 56, 56, 0.221);
-  overflow: hidden;
+  overflow: scroll;
   z-index: 2;
 }
+  .icon-navs{
+    object-fit: cover;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    display: block;
+  margin-right: 1em;
+  background-color:#e6e7e9fa;
+  
+  border-radius: 50%;
+  }
+  .Notification-Section{
+    display: flex;
+    margin:10px;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  .Notification-Section:hover{
+    background-color: rgb(213, 212, 212);
+   
+  }
