@@ -230,8 +230,9 @@ margin: 15px;
   justify-content: center;
 }
 .Search-for-activities-div{
+  flex-direction: column;
   display: flex;
-  height: 250%;
+  height: 120%;
   width: 58%;
   border-radius:10px;
   background-color: white;
@@ -283,4 +284,26 @@ hr{
   height: 0.01px;
   width:75%;;
   background-color:#d1d1d15f;
+}.search-input-for-create{
+  width: 300px;
+  height:35px;
+  border-radius: 20px;
+  background-color: #ebebeb;
+  border: none;
+  margin: 20px;
+  outline: none;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: medium;
+}
+.Message-menu-Dropdown{
+  position: fixed;
+  height: 90%;
+  width: 25vw;
+  transform: translate(-65%,1%);
+  border-radius: 10px;
+  background-color: #f6f9fb;
+  box-shadow: 0 4px 8px 0 rgba(39, 38, 38, 0.177), 0 6px 20px 0 rgba(56, 56, 56, 0.221);
+  overflow: hidden;
+  z-index: 2;
 }

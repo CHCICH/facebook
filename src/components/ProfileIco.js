@@ -5,7 +5,7 @@ function ProfileIco() {
   return (
     <div onMouseOver={()=> sethighlight(true)} onMouseLeave={()=> sethighlight(false)}>
         <div className='icon-notification-navbar'>
-            <img src='icons/notification-icon.png' className='icon-nav'></img>
+            <img src='icons/profile_icon.png' className='icon-nav'></img>
         </div>
     {highlight && <div className='highlight'>Account</div>}
     
