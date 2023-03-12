@@ -111,7 +111,7 @@ function MainMenu() {
                 }}></input>
             </form>
             {newMenu.map((item)=>{
-              return(<div className='highilited-create-idea' style={{'marginBottom':'2em'}}>
+              return(<div key={item.id} className='highilited-create-idea' style={{'marginBottom':'2em'}}>
                 <img src={item.url} className='Logo-icon'></img>
                 <h4>{item.name}</h4>
                 </div>)

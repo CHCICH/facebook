@@ -1,4 +1,4 @@
-import React, { useContext, useEffect ,useState,useReducer} from 'react'
+import React, { useContext, useEffect ,useState,useReducer,useRef} from 'react'
 import {NavLink, Link } from 'react-router-dom';
 import MainMenu from './MainMenu';
 import Messages from './Messages';
@@ -6,13 +6,31 @@ import ProfileIco from './ProfileIco';
 import Notification from './Notification';
 import {User} from './Main'
 
+function getWindowSize() {
+  const {innerWidth} = window;
+  return innerWidth;
+}
 function NavBar() {
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+
+    }
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
   let {user,setUser} = useContext(User)
   let initalStateHover = {0:false,1:false,2:false,3:false,4:false}
   let sideBar =[{path:'',
   img:'Home.png',id:0,
   name:'Home',
-},{
+},{ 
 path:'/friends',
   img:'Friends.png',id:1,
   name:'Friends',
@@ -60,7 +78,7 @@ path:'/friends',
         </div>
   
         </div>
-       { true ?
+       { (windowSize>900)?
         <div className='Links-div-main'>
           {
             sideBar.map((item)=>{
