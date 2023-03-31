@@ -63,7 +63,8 @@ path:'/friends',
     }
   }
   const [state, dispatch] = useReducer(reducerHover, initalStateHover)
-    
+  const [dropper_animation, setdropper_animation] = useState({i1: 0,i2:0,i3:0,i4:100})
+  const [path_change, setPath_change] = useState('/')
   return (
     <div className='NavBar'>
         <div className='search-box'>
@@ -91,14 +92,32 @@ path:'/friends',
             })
           }
                              
-        </div> : <div>hello</div>}
-        <div className='icons-buttons-box'>
+        </div> : <div>
+          <Link to={path_change}>
+            <div onClick={()=>{
+              if(dropper_animation.i1 == 0){
+              setdropper_animation({i1:45,i2:30,i3:-45,i4:0});
+              
+              setPath_change('/')
+              }else{
+              setdropper_animation({i1:0,i2:0,i3:0,i4:100});
+              
+              setPath_change('/disboard')
+              }
+            }}>
+            <div className='slider-1' style={{"transform":`rotate(${dropper_animation.i1}deg) translate(${dropper_animation.i2}%) `}}></div>
+            <div className='slider-1'style={{"opacity":`${dropper_animation.i4}%`}}></div>
+            <div className='slider-1'style={{"transform":`rotate(${dropper_animation.i3}deg) translate(${dropper_animation.i2}%) `}}></div>
+            </div>
+          </Link>
+          </div>}
+       { (windowSize>900)? <div className='icons-buttons-box'>
             <MainMenu/>
             <Messages/>
             <Notification/>
             <ProfileIco/>
             
-        </div>
+        </div>:<div></div>}
     </div>
   )
 }

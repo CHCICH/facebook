@@ -328,3 +328,13 @@ hr{
     background-color: rgb(213, 212, 212);
    
   }
+body{
+  padding-top: 70px;
+}
+.slider-1{
+  width: 50px;
+  transition: all 2s;
+  height: 6px;
+  background-color: black;
+  margin: 5px;
+}

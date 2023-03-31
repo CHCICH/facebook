@@ -6,6 +6,7 @@ import Friends from './Friends'
 import Watch from './Watch'
 import Groups from './Groups'
 import Error from './Error'
+import Disboard from './Disboard'
 import NavBar from './NavBar'
 
 let User = React.createContext(null)
@@ -44,6 +45,7 @@ function Main() {
             <Route path='/' element={<Outlet/>}>
                 <Route path='' element={<Home/>}/>
                 <Route path='marketplace' element={<Marketplace/>}/>
+                <Route path='disboard' element={<Disboard/>}/>
                 <Route path='friends' element={<Friends/>}/>
                 <Route path='watch' element={<Watch/>}/>
                 <Route path='groups' element={<Groups/>}/>
