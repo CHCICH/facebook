@@ -175,6 +175,19 @@ top: 40px;
   
   padding-left: 40px;
 }
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+.width-bar{
+ width: 50px;
+ padding-left:20px;
+ transform: translate(-100%);
+
+}
+.slider-box{
+  margin-left:200px;
+}
+}
+
 .little-searchicon{
   transform: translate(-230%,-120%);
   padding: 10px;
@@ -333,8 +346,9 @@ body{
 }
 .slider-1{
   width: 50px;
-  transition: all 2s;
+  transition: all 1s;
   height: 6px;
-  background-color: black;
+  background-color: rgb(52, 46, 46);
   margin: 5px;
+  border-radius: 20px;
 }

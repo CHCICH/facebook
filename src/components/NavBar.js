@@ -104,7 +104,7 @@ path:'/friends',
               
               setPath_change('/disboard')
               }
-            }}>
+            }} className='slider-box'>
             <div className='slider-1' style={{"transform":`rotate(${dropper_animation.i1}deg) translate(${dropper_animation.i2}%) `}}></div>
             <div className='slider-1'style={{"opacity":`${dropper_animation.i4}%`}}></div>
             <div className='slider-1'style={{"transform":`rotate(${dropper_animation.i3}deg) translate(${dropper_animation.i2}%) `}}></div>
