@@ -352,3 +352,77 @@ body{
   margin: 5px;
   border-radius: 20px;
 }
+
+.Main-Home-Body{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  height:100%;
+  
+}
+.side-bar-icon-menu{
+  object-fit: cover;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
+  display: block;
+margin-right: 1em;
+/* background-color:#e6e7e9fa; */
+padding: 5px;
+border-radius: 50%;
+}
+.side-bar-holder-menu{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.side-bar-menu-home{
+  background-color:rgb(255, 255, 255) ;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top:55px;
+  left: 0px;
+  width: 20%;
+  padding: 20px;
+}
+.Post{
+  width: 100%;
+  height: 710px;
+  background-color: #ffffff;
+  margin-top: 30px;
+  padding-top:15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0 4px 8px 0 rgba(39, 38, 38, 0.177), 0 6px 20px 0 rgba(56, 56, 56, 0.221);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.post-icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: rgb(214, 214, 214);
+  object-fit: contain;
+}
+.head-of-post{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: rgb(130, 130, 130) solid 1px;
+}
+.post-img{
+  height: 70%;
+  object-fit: contain;
+  border-bottom: solid 1px rgb(173, 173, 173);
+}
+.likes_count{
+  display: flex;
+  justify-content: space-between;
+  width:40px;
+}
+.like_button{
+  background-color: #61dafb;
+  width: 100px;
+  cursor: pointer;
+}
