@@ -1,8 +1,5 @@
-# Getting Started with Create React App
+# This app is a facebook clone built by CHICH 
 
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
 
